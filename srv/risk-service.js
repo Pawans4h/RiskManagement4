@@ -3,6 +3,7 @@ const cds = require('@sap/cds')
 // The service implementation with all service handlers
 module.exports = cds.service.impl(async function () {
     // Define constants for the Risk and BusinessPartner entities from the risk-service.cds file
+    // This code is to check code push
     const { Risks, BusinessPartners } = this.entities;
     // This handler will be executed directly AFTER a READ operation on RISKS
     // With this we can loop through the received data set and manipulate the single risk entries
